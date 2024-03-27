@@ -7,7 +7,7 @@ const CardView = () => {
   const { state } = useAppContext();
   const { name, number, expirationMonth, expirationYear, cvv } = state;
   return (
-    <section className="mb-16 flex w-full items-center bg-Mobile bg-cover bg-no-repeat px-4 lg:mb-0 lg:min-h-screen lg:basis-1/2 lg:bg-Desktop lg:bg-contain lg:p-0">
+    <div className="mb-16 flex w-full items-center bg-Mobile bg-cover bg-no-repeat px-4 lg:mb-0 lg:min-h-screen lg:basis-1/2 lg:bg-Desktop lg:bg-contain lg:p-0">
       <div className="relative top-8 mx-auto h-[15.25rem] w-full max-w-[23rem] lg:top-0 lg:mr-4 lg:h-[32.875rem] lg:max-w-[33.75rem]">
         <div className="absolute bottom-0 z-20 order-2 max-w-[17.875rem] lg:bottom-auto lg:order-1 lg:max-w-[27.875rem]">
           <img src={cardFront} alt="front side of payment card" />
@@ -32,7 +32,7 @@ const CardView = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 export default CardView;
