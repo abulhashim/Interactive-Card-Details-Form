@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io/solutions/interactive-card-details-form](https://www.frontendmentor.io/solutions/interactive-card-details-form)
+- Solution URL: [frontendmentor.io/solutions/interactive-card-details-form](https://www.frontendmentor.io/solutions/interactive-card-details-form-using-reactjs-C7Z8ns7Y_A)
 - Live Site URL: [abulhashim.github.io/Interactive-Card-Details-Form](https://abulhashim.github.io/Interactive-Card-Details-Form/)
 
 ## My process
