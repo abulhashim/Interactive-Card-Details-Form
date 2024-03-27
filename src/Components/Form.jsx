@@ -49,7 +49,7 @@ const Form = ({ setIsFormValid }) => {
   }
 
   return (
-    <section className="p-5 lg:basis-1/2 lg:p-0">
+    <div className="p-5 lg:basis-1/2 lg:p-0">
       <form
         className="mx-auto flex max-w-[23.875rem] flex-col gap-3.5 lg:ml-28 lg:gap-[1.3125rem]"
         onSubmit={handleSubmit}
@@ -76,7 +76,7 @@ const Form = ({ setIsFormValid }) => {
           Confirm
         </button>
       </form>
-    </section>
+    </div>
   );
 };
 export default Form;
