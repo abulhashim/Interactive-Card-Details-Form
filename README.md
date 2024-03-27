@@ -30,7 +30,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Mobile first workflow
-- Tailiwnd CSS
+- Tailwind CSS
 - ReactJS
 
 ## Author
