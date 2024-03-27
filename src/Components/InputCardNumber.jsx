@@ -40,7 +40,7 @@ function InputCardNumber({ clickHandler, error }) {
     <div>
       <label
         htmlFor="number"
-        className="text-xs font-semibold uppercase tracking-[0.185em] text-VeryDarkViolet"
+        className="text-xs uppercase tracking-[0.185em] text-VeryDarkViolet"
       >
         card number
         <input

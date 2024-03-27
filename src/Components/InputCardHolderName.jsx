@@ -25,7 +25,7 @@ function InputCardHolderName({ clickHandler, error }) {
     <div>
       <label
         htmlFor="name"
-        className="text-xs font-semibold uppercase tracking-[0.185em] text-VeryDarkViolet"
+        className="text-xs uppercase tracking-[0.185em] text-VeryDarkViolet"
       >
         Cardholder Name
         <input

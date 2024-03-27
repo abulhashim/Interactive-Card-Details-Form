@@ -23,7 +23,7 @@ function InputCVV({ clickHandler, error }) {
     <div className="basis-1/2">
       <label
         htmlFor="cvv"
-        className="text-xs font-semibold uppercase tracking-[0.185em] text-VeryDarkViolet"
+        className="text-xs uppercase tracking-[0.185em] text-VeryDarkViolet"
       >
         cvc
         <input
