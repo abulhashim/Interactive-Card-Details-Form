@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function InputExpirationDate({ clickHandler, error }) {
   const [errorMessage, setErrorMessage] = useState(error);
+
+  const expirationMonthRef = useRef(null);
 
   useEffect(() => {
     if (error) {
@@ -46,39 +48,47 @@ function InputExpirationDate({ clickHandler, error }) {
   }
 
   return (
-    <div className="basis-1/2">
-      <label className="text-xs font-semibold uppercase tracking-[0.185em] text-VeryDarkViolet">
+    <fieldset className="mt-2 basis-1/2">
+      <legend
+        onClick={() => {
+          expirationMonthRef.current.focus();
+        }}
+        className="text-xs uppercase tracking-[0.185em] text-VeryDarkViolet"
+      >
         exp. date (mm/yy)
-        <div className="flex gap-3">
-          <input
-            type="text"
-            name="expirationMonth"
-            id="expirationMonth"
-            maxLength={2}
-            onChange={handleChange}
-            placeholder="MM"
-            className={`mt-1.5 w-full rounded-md border px-4 py-[0.5625rem] text-base placeholder:text-LightGrayishViolet ${
-              errorMessage
-                ? "border-Red outline-Red focus:border-Red"
-                : "border-LightGrayishViolet"
-            }`}
-          />
+      </legend>
+      <div className="flex gap-3">
+        <input
+          type="text"
+          name="expirationMonth"
+          id="expirationMonth"
+          ref={expirationMonthRef}
+          maxLength={2}
+          onChange={handleChange}
+          placeholder="MM"
+          aria-label="Expiration Month"
+          className={`mt-1.5 w-full rounded-md border px-4 py-[0.5625rem] text-base placeholder:text-LightGrayishViolet ${
+            errorMessage
+              ? "border-Red outline-Red focus:border-Red"
+              : "border-LightGrayishViolet"
+          }`}
+        />
 
-          <input
-            type="text"
-            name="expirationYear"
-            id="expirationYear"
-            maxLength={2}
-            onChange={handleChange}
-            placeholder="YY"
-            className={`mt-1.5 w-full rounded-md border px-4 py-[0.5625rem] text-base placeholder:text-LightGrayishViolet ${
-              errorMessage
-                ? "border-Red outline-Red focus:border-Red"
-                : "border-LightGrayishViolet"
-            }`}
-          />
-        </div>
-      </label>
+        <input
+          type="text"
+          name="expirationYear"
+          id="expirationYear"
+          maxLength={2}
+          onChange={handleChange}
+          placeholder="YY"
+          aria-label="Expiration Year"
+          className={`mt-1.5 w-full rounded-md border px-4 py-[0.5625rem] text-base placeholder:text-LightGrayishViolet ${
+            errorMessage
+              ? "border-Red outline-Red focus:border-Red"
+              : "border-LightGrayishViolet"
+          }`}
+        />
+      </div>
       {errorMessage && (
         <div
           aria-live="polite"
@@ -87,7 +97,7 @@ function InputExpirationDate({ clickHandler, error }) {
           {errorMessage}
         </div>
       )}
-    </div>
+    </fieldset>
   );
 }
 export default InputExpirationDate;
