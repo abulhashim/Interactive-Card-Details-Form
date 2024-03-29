@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Design](images/desktop-design.jpg)
+![Desktop Design](design/desktop-design.jpg)
 
 ### Links
 
