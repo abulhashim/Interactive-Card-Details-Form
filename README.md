@@ -22,7 +22,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontendmentor.io/solutions/interactive-card-details-form](https://www.frontendmentor.io/solutions/interactive-card-details-form-using-reactjs-C7Z8ns7Y_A)
-- Live Site URL: [abulhashim.github.io/Interactive-Card-Details-Form](https://abulhashim.github.io/Interactive-Card-Details-Form/)
 
 ## My process
 
@@ -35,5 +34,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@abulhashim](https://www.frontendmentor.io/profile/abulhashim)
-- Twitter - [@iameenahmed](https://www.twitter.com/iAmeenAhmed)
+- Frontend Mentor - [@iameenahmed](https://www.frontendmentor.io/profile/iameenahmed)
+- Twitter - [@iameenahmed](https://www.twitter.com/iameenahmed)
